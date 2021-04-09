@@ -4,7 +4,7 @@
 
 #navbar {
   overflow: hidden;
-  background-color:powderblue;
+  background-color:#b0e0e6;
 }
 
 #navbar a {
@@ -16,9 +16,13 @@
   text-decoration: none;
 }
 
-#navbar a:hover {
-  background-color: #82D8E3;
+#navbar a:not(.active):hover {
+  background-color: #82d8e3;
   color: black;
+}
+
+.active {
+  background-color: #2fbdd0
 }
 
 #header {
@@ -29,11 +33,66 @@
   padding: 10px;
   padding-left: 100px;
   padding-right: 100px;
-  height: 200px;
 }
 
 #footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
   background-color: #F1F1F1;
   text-align: center;
   padding: 5px;
+}
+
+#restartBtn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #008000;
+}
+
+#restartBtn:hover {
+  background-color: #009900;
+}
+
+.table_container{
+  width: 100%;
+}
+
+table#game_table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+table#game_table, td, th {
+  border: 3px solid green;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.tekst {
+  text-align: center;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.selected {
+  opacity: 0.5;
+}
+
+.scored {
+  opacity: 1.0;
 }
