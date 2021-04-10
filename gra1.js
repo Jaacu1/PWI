@@ -66,14 +66,14 @@ function updateScore() {
 
 function generateImgs() {
 	imgs = [
-	'C:/Users/Jacek/Desktop/images/1.jpg',
-	'C:/Users/Jacek/Desktop/images/2.jpg',
-	'C:/Users/Jacek/Desktop/images/3.jpg',
-	'C:/Users/Jacek/Desktop/images/4.jpg',
-	'C:/Users/Jacek/Desktop/images/5.jpg',
-	'C:/Users/Jacek/Desktop/images/6.jpg',
-	'C:/Users/Jacek/Desktop/images/7.jpg',
-	'C:/Users/Jacek/Desktop/images/8.jpg',
+	'images/1.jpg',
+	'images/2.jpg',
+	'images/3.jpg',
+	'images/4.jpg',
+	'images/5.jpg',
+	'images/6.jpg',
+	'images/7.jpg',
+	'images/8.jpg',
 	];
 	
 	imgs = shuffle(imgs);
