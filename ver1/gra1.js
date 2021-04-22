@@ -121,10 +121,11 @@ function komputer() {
 
 	setTimeout(function () {
 		if (unturned.length > 0 && turn == 1) {
-			j = getRandomInt(0, unturned.length)
-			do {
-				k = getRandomInt(0, unturned.length)
-			} while (j == k);
+			j = getRandomInt(0, unturned.length);
+			k = getRandomInt(0, unturned.length);
+			if (k == unturned.length - 1) {
+				k = k - 1;
+			}
 			selectImg(unturned[j]);
 			setTimeout(function () {
 				selectImg(unturned[k]);
