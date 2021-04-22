@@ -20,15 +20,12 @@
         var app = angular.module("myApp", ["ngRoute"]);
         app.config(function ($routeProvider) {
             $routeProvider
-                .when("/", {
-                    templateUrl: "glowna2.htm"
-                })
                 .when("/london", {
-                    templateUrl: "london.htm"
+                    templateUrl: "/london.htm"
                 })
                 .when("/paris", {
-                    templateUrl: "paris.htm"
-                });
+                    templateUrl: "/paris.htm"
+                })
         });
 
     </script>
